@@ -1,0 +1,43 @@
+{
+    "logoImageUrl": "https://avatars.githubusercontent.com/u/984308?s=400&u=e03df8cb57f8322ec4f7976d071a30574cd141a8&v=4",
+    "logoImageCaption": "Scott A. Green (in his normal habitat)",
+    "document": {
+        "landing" : {
+            "heading": "Portfolio for Scott A. Green (SAGreenXYZ)"
+        }
+    },
+    "contact": {
+        "email": "sagreenxyz@gmail.com",
+        "linkedIn": "https://www.linkedin.com/in/sagreenxyz/",
+        "github": "https://github.com/sagreenxyz"
+    },
+    "portfolio": {
+        "tier1": [
+
+        ],
+        "tier2": [
+            {
+                "id": 1,
+                "name": "RoboFriends",
+                "imageUrl": "https://raw.githubusercontent.com/sagreenxyz/robofriends/main/public/sagreenxyz.github.io_robofriends_.png",
+                "repo": "https://github.com/sagreenxyz/robofriends",
+                "demo": "https://sagreenxyz.github.io/robofriends/",
+                "description": "Basic React application"
+            }
+        ]
+    },
+    "resources": [
+        {
+            "title": "Pure CSS Loaders",
+            "tags": ["css", "loader"],
+            "url": "https://loading.io/css/",
+            "description": "Loading images in pure CSS - no JavaScript necessary."
+        }
+    ],
+    "guides": [
+        {
+            "title": "CSS Tricks: A Guide to Flexbox",
+            "tags": ["css", "flexbox"]
+        }
+    ]
+}

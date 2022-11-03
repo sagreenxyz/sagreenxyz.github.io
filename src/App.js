@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import config from './.config.json'
+import { LogoImage } from "./components/LogoImage";
+import { BgFancy } from './components/backgrounds/BgFancy';
+import { BgWatermelon } from './components/backgrounds/BgWatermelon';
+import { BgRoyalRainbow } from './components/backgrounds/BgRoyalRainbow';
+import Card from './components/cards/Card'
 
 function App() {
+  const cards = [
+    {
+      image: config.logoImageUrl,
+      caption: config.logoImageCaption
+    },
+    {
+      image: config.portfolio.tier2[0].imageUrl,
+      caption: config.portfolio.tier2[0].name
+    },
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>This is a Work in Progress...  Currently in Development</h1>
+      <Card imageUrl={cards[0].image} caption={cards[0].caption} />
+      <Card imageUrl={cards[1].image} caption={cards[1].caption} />
     </div>
-  );
+  )
 }
 
 export default App;
