@@ -1,0 +1,78 @@
+:root {
+    --gradient_bg_color: #006dca;
+    --gradient_spot1_color: #001a39;
+    --gradient_spot1_w: 75vw;
+    --gradient_spot1_h: 75vh;
+    --gradient_spot1_x: 0;
+    --gradient_spot1_y: 0;
+    --gradient_spot2_color: #9b70ff;
+    --gradient_spot2_w: 75vw;
+    --gradient_spot2_h: 75vh;
+    --gradient_spot2_x: 100%;
+    --gradient_spot2_y: 0;
+    --gradient_spot3_color: #42ffc6;
+    --gradient_spot3_w: 75vw;
+    --gradient_spot3_h: 75vh;
+    --gradient_spot3_x: 100%;
+    --gradient_spot3_y: 100%;
+    --gradient_spot4_color: #ff3b8d;
+    --gradient_spot4_w: 75vw;
+    --gradient_spot4_h: 75vh;
+    --gradient_spot4_x: 0;
+    --gradient_spot4_y: 100%;
+  }
+  
+  .fancy-gradient {
+    background-color: var(--gradient_bg_color);
+    background-image: radial-gradient(var(--gradient_spot1_w) var(--gradient_spot1_h) at left var(--gradient_spot1_x) top var(--gradient_spot1_y), var(--gradient_spot1_color), transparent), radial-gradient(var(--gradient_spot2_w) var(--gradient_spot2_h) at left var(--gradient_spot2_x) top var(--gradient_spot2_y), var(--gradient_spot2_color), transparent), radial-gradient(var(--gradient_spot3_w) var(--gradient_spot3_h) at left var(--gradient_spot3_x) top var(--gradient_spot3_y), var(--gradient_spot3_color), transparent), radial-gradient(var(--gradient_spot4_w) var(--gradient_spot4_h) at left var(--gradient_spot4_x) top var(--gradient_spot4_y), var(--gradient_spot4_color), transparent);
+  }
+  
+  .fancy-gradient--rainbow {
+    --gradient_spot1_color: #db0072;
+    /* rose */
+    --gradient_spot1_w: 50vw;
+    --gradient_spot1_h: 100vh;
+    --gradient_spot1_x: -10%;
+    --gradient_spot1_y: 80%;
+    --gradient_spot2_color: #ffe53e;
+    /* yellow */
+    --gradient_spot2_w: 50vw;
+    --gradient_spot2_h: 100vh;
+    --gradient_spot2_x: 25%;
+    --gradient_spot2_y: 60%;
+    --gradient_spot3_color: #00ffe4;
+    /* teal */
+    --gradient_spot3_w: 50vw;
+    --gradient_spot3_h: 100vh;
+    --gradient_spot3_x: 55%;
+    --gradient_spot3_y: 40%;
+    --gradient_spot4_color: #d150ff;
+    /* purple */
+    --gradient_spot4_w: 50vw;
+    --gradient_spot4_h: 100vh;
+    --gradient_spot4_x: 90%;
+    --gradient_spot4_y: 20%;
+  }
+  
+  .demo {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .title {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: ui-rounded, system-ui, sans-serif;
+    font-size: clamp(32px, 9vw, 200px);
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) skew(0deg, -10deg);
+    text-shadow: 0.025em 0.025em 0.025em rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    margin: 0;
+  }
