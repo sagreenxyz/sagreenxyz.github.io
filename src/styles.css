@@ -1,0 +1,14 @@
+/* Required when using <wa-page>. */
+html,
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* <wa-page> pads the <main> area by default. Keep that here since we use a
+   single contained column. Remove for full-bleed sections. */
+
+a {
+  color: var(--wa-color-brand-on-quiet);
+}
