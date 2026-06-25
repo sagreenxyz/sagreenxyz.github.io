@@ -12,3 +12,9 @@ body {
 a {
   color: var(--wa-color-brand-on-quiet);
 }
+
+/* Active route link in the sidebar nav. */
+a[data-route][aria-current] {
+  color: var(--wa-color-brand-on-loud);
+  font-weight: var(--wa-font-weight-semibold);
+}

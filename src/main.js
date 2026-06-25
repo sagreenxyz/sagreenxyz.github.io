@@ -14,3 +14,7 @@ import '@awesome.me/webawesome/dist/components/divider/divider.js';
 // Site-specific styles.
 import './styles.css';
 
+// Hash-based client-side router.
+import { startRouter } from './router.js';
+startRouter();
+
